@@ -1,0 +1,436 @@
+/* variables de color */
+:root {
+    --verde: #2d6a4f;
+    --verde-claro: #f0f7f4;
+    --rosa: #f4a0a0;
+    --gris: #f8f8f8;
+    --texto: #333;
+}
+
+/* general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--texto);
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--verde);
+}
+
+/* barra superior */
+.top-bar {
+    background: var(--verde);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.85rem;
+}
+
+/* navbar */
+.navbar {
+    background: white;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--verde) !important;
+}
+
+.nav-link {
+    color: var(--texto) !important;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--verde) !important;
+    font-weight: bold;
+}
+
+.search-form input {
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    font-size: 0.85rem;
+}
+
+/* hero */
+.hero {
+    background: var(--verde-claro);
+    padding: 60px 0;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+.hero-subtitle {
+    color: var(--verde);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.hero .btn-dark {
+    background: var(--verde);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin-top: 15px;
+}
+
+/* categorias */
+.categoria-item {
+    padding: 10px;
+}
+
+.categoria-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.categoria-item h6 {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.categoria-item small {
+    color: #888;
+    font-size: 0.75rem;
+}
+
+/* productos */
+.producto-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-card img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.precio {
+    font-weight: bold;
+    color: var(--texto);
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.estrellas {
+    color: #f4a000;
+    font-size: 0.8rem;
+}
+
+/* beneficios */
+.beneficios {
+    background: var(--gris);
+    padding: 40px 0;
+    border-radius: 15px;
+}
+
+/* footer */
+.footer-newsletter {
+    background: var(--verde-claro);
+    padding: 30px 0;
+}
+
+.footer-newsletter h5 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-newsletter p {
+    margin: 0;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.footer-links {
+    background: #fff;
+}
+
+.footer-newsletter {
+    background: var(--verde-claro);
+}
+
+.footer-links h5 {
+    color: var(--verde);
+    font-weight: bold;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: var(--verde);
+}
+
+/* formulario agregar */
+.agregar-producto {
+    background: var(--verde-claro);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.agregar-producto h2 {
+    color: var(--verde);
+}
+
+.btn-dark {
+    background: var(--verde) !important;
+    border-color: var(--verde) !important;
+}
+
+.btn-outline-dark {
+    color: var(--verde) !important;
+    border-color: var(--verde) !important;
+}
+
+.btn-outline-dark:hover {
+    background: var(--verde) !important;
+    color: white !important;
+}
+
+/* ===== LOGIN ===== */
+.login-page {
+    display: flex !important;
+    flex-direction: row !important;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.login-left {
+    flex: 1;
+    background: linear-gradient(135deg, #2d6a4f, #52b788);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-logo h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.login-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.login-texto em {
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+
+.login-form-box {
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-logo p {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.login-texto h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.login-texto p {
+    opacity: 0.9;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+.login-beneficios {
+    list-style: none;
+    padding: 0;
+}
+
+.login-beneficios li {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.login-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.8rem;
+    background: #1b4332;
+    margin: 0 -40px -40px -40px;
+    padding: 20px 40px;
+    border-radius: 0 0 0 0;
+}
+
+.login-right {
+    width: 420px;
+    background: #1b4332;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-left: none;
+    clip-path: ellipse(190% 190% at 190% 50%);
+}
+
+.login-form-box {
+    width: 100%;
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(45, 106, 79, 0.15);
+}
+
+.login-form-box h3 {
+    color: #2d6a4f;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form-box .input-group-text {
+    background: #f0f7f4;
+    border-color: #2d6a4f;
+}
+
+.login-form-box .form-control {
+    border-color: #c8e6c9;
+}
+
+.login-form-box .form-control:focus {
+    border-color: #2d6a4f;
+    box-shadow: 0 0 0 0.2rem rgba(45, 106, 79, 0.15);
+}
+
+.login-form-box {
+    width: 100%;
+}
+
+.login-form-box h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.btn-login {
+    background: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(45, 106, 79, 0.4);
+}
+
+.btn-login:hover {
+    background: #1b4332;
+    color: white;
+}
+
+.btn-social {
+    border: 2px solid #2d6a4f;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #2d6a4f;
+    font-weight: 500;
+}
+
+.btn-social:hover {
+    background: #2d6a4f;
+    color: white;
+}
+
+
+.hero {
+    background-image: url('/img/hero.jpg');
+    background-size: cover;
+    background-position: center top;
+    padding: 100px 0;
+    border-radius: 15px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.hero p {
+    color: white;
+}
+
+.hero-subtitle {
+    color: white !important;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.confirmacion-box {
+    background: var(--verde-claro);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}

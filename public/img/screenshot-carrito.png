@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:3000/carrito -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oxigen - Belleza que te hace brillar">
+    <meta name="keywords" content="maquillaje, cosmeticos, belleza, cuidado facial">
+    <title>Oxigen - Belleza Natural</title>
+    <link rel="stylesheet" href="./screenshot-carrito_files/style.css">
+    <link href="./screenshot-carrito_files/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-bar">
+        ✦ Envío gratis en compras mayores a $50.000 🚚 ✦
+    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+        <div class="container-fluid px-4">
+    
+            <a class="navbar-brand" href="http://localhost:3000/">
+                🌿 Oxigen
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarContent">
+    
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="http://localhost:3000/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:3000/categoria/Cuidado%20facial">Cuidado facial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:3000/categoria/Maquillaje">Maquillaje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:3000/categoria/Brochas">Brochas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:3000/categoria/Labios">Labios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:3000/categoria/Ojos">Ojos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:3000/categoria/Accesorios">Accesorios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:3000/categoria/Perfumes">Perfumes</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <input class="form-control form-control-sm rounded-pill" type="search" placeholder="Buscar productos..." style="width: 180px;">
+                    <a href="http://localhost:3000/carrito#" class="nav-icon">🔍</a>
+                    <a href="http://localhost:3000/carrito#" class="nav-icon">👤</a>
+                    <a href="http://localhost:3000/carrito" class="nav-icon">🛒</a>
+                </div>
+    
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="carrito my-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>🛒 Mi Carrito</h2>
+            <a href="http://localhost:3000/" class="btn btn-outline-dark">← Seguir comprando</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-3 carrito-item">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-2">
+                            <img src="./screenshot-carrito_files/cuidado6.jpg" class="img-fluid rounded" alt="Crema Facial">
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <h5>Crema Facial</h5>
+                            <p class="precio">$1400</p>
+                        </div>
+                        <div class="col-md-2 text-center d-flex align-items-center justify-content-center gap-2">
+                            <form action="http://localhost:3000/carrito/reducir" method="POST">
+                                <input type="hidden" name="id" value="12">
+                                <button class="btn btn-sm btn-outline-dark">-</button>
+                            </form>
+                            <span class="badge bg-dark">1</span>
+                            <form action="http://localhost:3000/carrito/aumentar" method="POST">
+                                <input type="hidden" name="id" value="12">
+                                <button class="btn btn-sm btn-outline-dark">+</button>
+                            </form>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <form action="http://localhost:3000/carrito/eliminar" method="POST">
+                                <input type="hidden" name="id" value="12">
+                                <button class="btn btn-danger btn-sm">🗑️</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 carrito-item">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-2">
+                            <img src="./screenshot-carrito_files/labios7.jpg" class="img-fluid rounded" alt="Brillo Rosa">
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <h5>Brillo Rosa</h5>
+                            <p class="precio">$480</p>
+                        </div>
+                        <div class="col-md-2 text-center d-flex align-items-center justify-content-center gap-2">
+                            <form action="http://localhost:3000/carrito/reducir" method="POST">
+                                <input type="hidden" name="id" value="6">
+                                <button class="btn btn-sm btn-outline-dark">-</button>
+                            </form>
+                            <span class="badge bg-dark">1</span>
+                            <form action="http://localhost:3000/carrito/aumentar" method="POST">
+                                <input type="hidden" name="id" value="6">
+                                <button class="btn btn-sm btn-outline-dark">+</button>
+                            </form>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <form action="http://localhost:3000/carrito/eliminar" method="POST">
+                                <input type="hidden" name="id" value="6">
+                                <button class="btn btn-danger btn-sm">🗑️</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-4 resumen-carrito">
+                    <h4>Resumen</h4>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Total:</span>
+                        <strong>$1880</strong>
+                    </div>
+                    <hr>
+
+                    <form action="http://localhost:3000/carrito/vaciar" method="POST">
+                        
+                            <button class="btn btn-dark w-100 mb-2">Pagar ahora</button>
+                        </form>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+    </main>
+
+    <footer class="mt-5">
+        <div class="footer-newsletter py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 d-flex align-items-center gap-3 mb-3 mb-md-0">
+                        <span style="font-size: 2rem;">✉️</span>
+                        <div>
+                            <h5 class="mb-0">¡Únete a nuestra comunidad!</h5>
+                            <p class="mb-0 text-muted">Recibe novedades, promociones y tips de belleza</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex gap-2">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico">
+                            <button class="btn btn-dark">Suscribirme</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-links py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <h5>🌿 Oxigen</h5>
+                        <p class="text-muted">Belleza que te hace brillar ✦</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h6 class="fw-bold">Categorías</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Cuidado facial</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Maquillaje</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Brochas</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Labios</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Ojos</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Accesorios</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Perfumes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h6 class="fw-bold">Información</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Sobre nosotros</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Preguntas frecuentes</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Envíos y devoluciones</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Términos y condiciones</a></li>
+                            <li><a href="http://localhost:3000/carrito#" class="text-muted">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h6 class="fw-bold">Síguenos</h6>
+                        <div class="d-flex gap-2 mb-3">
+                            <a href="http://localhost:3000/carrito#" class="text-muted">Facebook</a>
+                            <a href="http://localhost:3000/carrito#" class="text-muted">Instagram</a>
+                            <a href="http://localhost:3000/carrito#" class="text-muted">TikTok</a>
+                        </div>
+                        <h6 class="fw-bold">Contáctanos</h6>
+                        <p class="text-muted mb-1">hola@oxigen.com</p>
+                        <p class="text-muted">+57 300 123 4567</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center text-muted">© 2024 Oxigen. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./screenshot-carrito_files/bootstrap.bundle.min.js.descarga"></script>
+
+
+</body></html>

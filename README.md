@@ -74,4 +74,4 @@ El sistema utiliza MySQL con las siguientes tablas:
 
 ## 👩‍💻 Autora
 
-**Isis Peguero** - IPISA - Desarrollo de Portales Web y Multimedia
+**Isis Peguero y Camila Matias** - IPISA - Desarrollo de Portales Web y Multimedia
