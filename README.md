@@ -63,6 +63,7 @@ El sistema utiliza MySQL con las siguientes tablas:
 
 ## 📸 Capturas de Pantalla
 
+
 ### Página de Login
 ![Login](public/img/screenshot-login.png)
 
@@ -71,6 +72,9 @@ El sistema utiliza MySQL con las siguientes tablas:
 
 ### Carrito de Compras
 ![Carrito](public/img/screenshot-carrito.png)
+
+### Base de Datos MySQL
+![Base de Datos](public/img/screenshot-db.png)
 
 ## 👩‍💻 Autora
 
