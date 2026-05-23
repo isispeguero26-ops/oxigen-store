@@ -1,0 +1,77 @@
+<div class="login-page">
+
+    <div class="login-left">
+        <div class="login-logo">
+            <h1>OXÍGEN</h1>
+            <p>MAQUILLAJE QUE REALZA TU ESENCIA ♡</p>
+        </div>
+        <div class="login-texto">
+            <h2>Resalta tu belleza.<br><em>Sé tú, siempre.</em></h2>
+            <p>Productos de maquillaje de alta calidad para que te sientas segura, radiante y única todos los días.</p>
+            <ul class="login-beneficios">
+                <li>🌿 <strong>Fórmulas de alta calidad</strong><br><small>Ingredientes seleccionados para tu
+                        piel.</small></li>
+                <li>🐰 <strong>Cruelty free</strong><br><small>No testado en animales.</small></li>
+                <li>🌍 <strong>Belleza consciente</strong><br><small>Comprometidos con el planeta y contigo.</small>
+                </li>
+            </ul>
+        </div>
+        <div class="login-bottom">
+            <span>🚚 Envíos rápidos a todo el país</span>
+            <span>✅ Productos 100% originales</span>
+            <span>🔒 Pagos seguros y protegidos</span>
+            <span>🎧 Atención personalizada</span>
+        </div>
+    </div>
+
+    <div class="login-right">
+        <div class="login-form-box">
+            <h3>¡Bienvenida! ♡</h3>
+            <p class="text-muted">Inicia sesión para continuar</p>
+
+            {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+            {{/if}}
+
+            <form action="/login" method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Correo electrónico</label>
+                    <div class="input-group">
+                        <span class="input-group-text">✉️</span>
+                        <input type="email" name="email" class="form-control" placeholder="tu@correo.com" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <div class="input-group">
+                        <span class="input-group-text">🔒</span>
+                        <input type="password" name="password" class="form-control" placeholder="••••••••" required>
+                    </div>
+                    <div class="text-end mt-1">
+                        <a href="#" class="text-muted small">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-login w-100 mb-3">Iniciar sesión</button>
+            </form>
+
+            <div class="divider">o continúa con</div>
+
+            <div class="social-login">
+                <button class="btn btn-social">
+                    <img src="https://www.google.com/favicon.ico" width="18"> Continuar con Google
+                </button>
+                <button class="btn btn-social">
+                    🔵 Continuar con Facebook
+                </button>
+                <button class="btn btn-social">
+                    🍎 Continuar con Apple
+                </button>
+            </div>
+
+            <p class="text-center mt-3 small">¿No tienes cuenta? <a href="#">Regístrate</a></p>
+        </div>
+    </div>
+
+</div>

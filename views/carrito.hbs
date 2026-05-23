@@ -1,0 +1,71 @@
+<section class="carrito my-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>🛒 Mi Carrito</h2>
+            <a href="/" class="btn btn-outline-dark">← Seguir comprando</a>
+        </div>
+
+        {{#if carrito.length}}
+        <div class="row">
+            <div class="col-md-8">
+                {{#each carrito}}
+                <div class="card mb-3 carrito-item">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-2">
+                            <img src="{{imagen_url}}" class="img-fluid rounded" alt="{{nombre}}">
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <h5>{{nombre}}</h5>
+                            <p class="precio">${{precio}}</p>
+                        </div>
+                        <div class="col-md-2 text-center d-flex align-items-center justify-content-center gap-2">
+                            <form action="/carrito/reducir" method="POST">
+                                <input type="hidden" name="id" value="{{id}}">
+                                <button class="btn btn-sm btn-outline-dark">-</button>
+                            </form>
+                            <span class="badge bg-dark">{{cantidad}}</span>
+                            <form action="/carrito/aumentar" method="POST">
+                                <input type="hidden" name="id" value="{{id}}">
+                                <button class="btn btn-sm btn-outline-dark">+</button>
+                            </form>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <form action="/carrito/eliminar" method="POST">
+                                <input type="hidden" name="id" value="{{id}}">
+                                <button class="btn btn-danger btn-sm">🗑️</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-4 resumen-carrito">
+                    <h4>Resumen</h4>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Total:</span>
+                        <strong>${{total}}</strong>
+                    </div>
+                    <hr>
+
+                    <form action="/carrito/vaciar" method="POST">
+                        <form action="/pagar" method="POST">
+                            <button class="btn btn-dark w-100 mb-2">Pagar ahora</button>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        {{else}}
+        <div class="text-center py-5">
+            <p style="font-size: 4rem;">🛒</p>
+            <h4>Tu carrito está vacío</h4>
+            <a href="/" class="btn btn-dark mt-3">Ver productos</a>
+        </div>
+        {{/if}}
+
+    </div>
+</section>
