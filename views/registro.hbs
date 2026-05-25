@@ -1,0 +1,69 @@
+<div class="login-page">
+
+    <div class="login-left">
+        <div class="login-logo">
+            <h1>OXÍGEN</h1>
+            <p>MAQUILLAJE QUE REALZA TU ESENCIA ♡</p>
+        </div>
+        <div class="login-texto">
+            <h2>Únete a nuestra<br><em>comunidad.</em></h2>
+            <p>Crea tu cuenta y descubre productos de belleza de alta calidad para que te sientas única todos los días.
+            </p>
+            <ul class="login-beneficios">
+                <li>🌿 <strong>Fórmulas de alta calidad</strong><br><small>Ingredientes seleccionados para tu
+                        piel.</small></li>
+                <li>🐰 <strong>Cruelty free</strong><br><small>No testado en animales.</small></li>
+                <li>🌍 <strong>Belleza consciente</strong><br><small>Comprometidos con el planeta y contigo.</small>
+                </li>
+            </ul>
+        </div>
+        <div class="login-bottom">
+            <span>🚚 Envíos rápidos a todo el país</span>
+            <span>✅ Productos 100% originales</span>
+            <span>🔒 Pagos seguros y protegidos</span>
+            <span>🎧 Atención personalizada</span>
+        </div>
+    </div>
+
+    <div class="login-right">
+        <div class="login-form-box">
+            <h3>¡Crear cuenta! ♡</h3>
+            <p class="text-muted">Regístrate para continuar</p>
+
+            {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+            {{/if}}
+
+            <form action="/registro" method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Nombre completo</label>
+                    <div class="input-group">
+                        <span class="input-group-text">👤</span>
+                        <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Correo electrónico</label>
+                    <div class="input-group">
+                        <span class="input-group-text">✉️</span>
+                        <input type="email" name="email" class="form-control" placeholder="tu@correo.com" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <div class="input-group">
+                        <span class="input-group-text">🔒</span>
+                        <input type="password" name="password" class="form-control" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-login w-100 mb-3">Crear cuenta</button>
+            </form>
+
+            <p class="text-center mt-3 small">¿Ya tienes cuenta? <a href="/login">Inicia sesión</a></p>
+        </div>
+    </div>
+
+</div>
